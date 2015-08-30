@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run serve && npm run react:jsx",
-    "serve": "nodemon node_modules/http-server/bin/http-server -p 8000",
+    "start": "nodemon index.js && npm run server && npm run react:jsx",
+    "server": "nodemon node_modules/http-server/bin/http-server -p 8000",
     "react:jsx": "jsx --watch src/ public/build/"
   },
   "author": "",
@@ -13,5 +13,8 @@
   "devDependencies": {
     "http-server": "^0.8.0",
     "nodemon": "^1.4.1"
+  },
+  "dependencies": {
+    "twitter": "^1.2.5"
   }
 }
